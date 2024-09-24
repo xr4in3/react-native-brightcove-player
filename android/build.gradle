@@ -24,12 +24,11 @@ allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "28.0.3"
+    compileSdkVersion getExtOrIntegerDefault('compileSdkVersion')
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 26
+        minSdkVersion getExtOrIntegerDefault('minSdkVersion')
+        targetSdkVersion getExtOrIntegerDefault('targetSdkVersion')
         versionCode 1
         versionName "1.0"
         ndk {
