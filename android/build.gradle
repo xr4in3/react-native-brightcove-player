@@ -2,7 +2,8 @@
 
 buildscript {
     repositories {
-        jcenter()
+        google()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.2.0'
@@ -11,7 +12,6 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
         maven {
             url "$projectDir/../node_modules/react-native/android"
         }
