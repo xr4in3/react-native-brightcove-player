@@ -15,7 +15,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-         gradlePluginPortal()
+        gradlePluginPortal()
         maven {
             url "$projectDir/../node_modules/react-native/android"
         }
@@ -46,5 +46,5 @@ android {
 
 dependencies {
     implementation 'com.facebook.react:react-native:+'
-    implementation 'com.brightcove.player:exoplayer2:6.8.0'
+    implementation 'com.brightcove.player:exoplayer2:7.4.1'
 }
